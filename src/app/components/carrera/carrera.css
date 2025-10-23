@@ -31,50 +31,46 @@ body {
 }
 
 .chibi {
-  position: absolute;
-  bottom: 130px;
+
   left: 50%;
-  width: 100px;
-  height: 100px;
-  background: url('/images/anubis.png');
-  animation: run 1s steps(12) infinite;
+    animation: run 1s steps(12) infinite, animacion1 7s infinite;
+
 }
 .chibi2 {
-  position: absolute;
-  bottom: 130px;
-  left: 60%;
-  width: 100px;
-  height: 100px;
-  background: url('/images/hell-knight.png');
-  animation: run 1s steps(12) infinite;
+
+  left: 50%;
+    animation: run 1s steps(12) infinite, animacion1 10s infinite;
+
 }
 .chibi3 {
-  position: absolute;
-  bottom: 130px;
-  left: 56%;
-  width: 100px;
-  height: 100px;
-  background: url('/images/old-guy.png');
-  animation: run 1s steps(12) infinite;
+
+  left: 50%;
+    animation: run 1s steps(12) infinite, animacion1 11s infinite;
+
 }
 .chibi4 {
-  position: absolute;
-  bottom: 130px;
-  left: 48%;
-  width: 100px;
-  height: 100px;
-  background: url('/images/pirate.png');
-  animation: run 1s steps(12) infinite;
+  left: 50%;
+    animation: run 1s steps(12) infinite, animacion1 9s infinite;
 }
 .chibi5 {
+ left: 50%;
+   animation: run 1s steps(12) infinite, animacion1 5s infinite;
+}
+
+.chibi, .chibi2, .chibi3, .chibi4, .chibi5 {
   position: absolute;
   bottom: 130px;
-  left: 37%;
   width: 100px;
   height: 100px;
-  background: url('/images/succubus.png');
-  animation: run 1s steps(12) infinite;
+  background-size: cover;
+  transition: transform 0.5s;
 }
+
+.chibi { background-image: url('/images/anubis.png'); }
+.chibi2 { background-image: url('/images/hell-knight.png'); }
+.chibi3 { background-image: url('/images/old-guy.png'); }
+.chibi4 { background-image: url('/images/pirate.png'); }
+.chibi5 { background-image: url('/images/succubus.png'); }
 
 @keyframes run {
   0% { background-position-x: 0; }
@@ -86,3 +82,23 @@ body {
   100% { background-position-x: -800px; }
 }
 
+/*@keyframes animacion1{
+    0%{ 
+        transform: translateX(0) scaleX(1);   
+    }
+    25%{
+        transform: translateX(0%) scaleX(1); 
+    }
+    50%{
+        transform: translateX(0%) scaleX(1)
+    }
+    75%{
+        transform: translateX(0%) scaleX(1);
+    }
+    100%{
+        transform: translateX(0%) scaleX(1);
+    }
+    0%{ 
+        transform: translateX(0);   
+    }
+}*/
