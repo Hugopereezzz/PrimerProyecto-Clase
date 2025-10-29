@@ -28,7 +28,7 @@ export class TarjetaPersonajes {
       case 'humano': return 'raza-humano';
       case 'elfo':   return 'raza-elfo';
       case 'enano':  return 'raza-enano';
-      case 'orco':   return 'raza-orco';
+      case 'ogro':   return 'raza-ogro';
       case 'troll': return 'raza-troll';
       default:       return 'raza-default';
     }

@@ -1,5 +1,5 @@
-<app-nav-bar></app-nav-bar>
+<app-nav-bar (cambiarHalloween)="esHalloween = $event"></app-nav-bar>
 
-<div class="contendedor-root">
-<router-outlet></router-outlet>
+<div class="contendedor-root" [ngClass]="{ 'nav-halloween': esHalloween }">
+  <router-outlet></router-outlet>
 </div>

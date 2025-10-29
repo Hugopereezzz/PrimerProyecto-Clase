@@ -16,13 +16,13 @@
   margin-right: 2px;
 }
 
-.raza-humano   { background: #FF2800;}
-.raza-elfo     { background: #F576A1; }
+.raza-humano   { background: #F5D7B5;}
+.raza-elfo     { background: blue; }
 .raza-enano    { background: yellow; }
-.raza-orco     { background: #304230; }
+.raza-ogro     { background: #304230; }
 .raza-troll    { background: #CCFFE6; }
 
-.raza-humano, .raza-elfo, .raza-enano, .raza-orco, .raza-troll, .raza-default {
+.raza-humano, .raza-elfo, .raza-enano, .raza-ogro, .raza-troll, .raza-default {
   padding: 10px;
   border-radius: 15%;
 }

@@ -8,3 +8,12 @@
     justify-content: center;
     align-items: center;
 }
+
+.nav-halloween {
+  background-color: blueviolet !important;
+  color: orange !important;
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='80' height='80'><text x='50%' y='50%' font-size='40' text-anchor='middle' dominant-baseline='central'>🎃</text></svg>");
+  background-size: 120px 120px;
+  background-repeat: repeat;
+  opacity:1;
+}

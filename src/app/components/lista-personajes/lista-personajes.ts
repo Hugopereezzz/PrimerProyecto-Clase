@@ -13,9 +13,9 @@ export class ListaPersonajes {
     personajes = [
     { nombre: 'Maria', raza: 'Elfo', poder: 4, imagen: '/images/elfo.png' },
     { nombre: 'Hugo', raza: 'Humano', poder: 5, imagen: '/images/humano.png' },
-    { nombre: 'Azog', raza: 'Orco', poder: 2, imagen: '/images/ogro.png' },
+    { nombre: 'Gebolo', raza: 'Ogro', poder: 2, imagen: '/images/ogro.png' },
     { nombre: 'Guille', raza: 'Troll', poder: 1, imagen: '/images/troll.png' },
-    { nombre: 'Escudo de Roble', raza: 'Enano', poder: 3, imagen: '/images/enano.png' },
+    { nombre: 'Michu', raza: 'Enano', poder: 3, imagen: '/images/enano.png' },
     
   ];
 }
