@@ -1,5 +1,6 @@
 import { NgIf } from '@angular/common';
 import { Component } from '@angular/core';
+import { Consola } from '../../services/consola';
 
 @Component({
   selector: 'app-contador',
@@ -9,6 +10,10 @@ import { Component } from '@angular/core';
 })
 export class Contador {
 
+  constructor(private consola: Consola){
+
+  }
+
   numero:number = 0;
 
   incrementar(){
@@ -16,6 +21,7 @@ export class Contador {
       this.numero++;
     }else{
       this.numero=0;
+      this.consola.mostrarEnConsola("El contador se ha reseteado");
     }
 
   }

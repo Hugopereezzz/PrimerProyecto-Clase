@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NgIf } from '@angular/common';
+import { Consola } from '../../services/consola';
 
 @Component({
   selector: 'app-matatopos',
@@ -8,6 +9,10 @@ import { NgIf } from '@angular/common';
   styleUrl: './matatopos.css'
 })
 export class Matatopos {
+
+  constructor(private consola:Consola){
+
+  }
 
   numero:number = Math.floor(Math.random()*9) + 1;
   puntos:number = 0;
@@ -25,6 +30,8 @@ export class Matatopos {
   clickEnBoton(esRojo:boolean){
     if (esRojo){
       this.puntos++;
+      this.consola.incrementarToposMuertos();
+      this.consola.mostrarEnConsola("has matado un topillo, llevas " + this.consola.getToposMuertos());
     } else{
       this.puntos--;
     }
